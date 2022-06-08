@@ -1,5 +1,5 @@
 defmodule Sequence do
-    @server @Sequence.Server
+    @server Sequence.Server
 
     def start_link(current_number) do
         GenServer.start_link(@server, current_number, name: @server)
